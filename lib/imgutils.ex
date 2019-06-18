@@ -3,6 +3,8 @@ defmodule ImgUtils do
   TODO: write documentation for ImgUtils.
   """
 
+  @on_load :load_nifs
+
   @doc """
   TODO: Write documentation.
 
