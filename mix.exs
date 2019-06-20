@@ -16,7 +16,6 @@ defmodule ImgUtils.MixProject do
         maintainers: ["Grigory Starinkin"],
         files: [
           "lib",
-          "priv",
           "mix.exs",
           "Makefile",
           "c_src",
