@@ -12,7 +12,7 @@ by adding `imgutils` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:imgutils, "~> 0.1.0"}
+    {:imgutils, "~> 0.1.1"}
   ]
 end
 ```
