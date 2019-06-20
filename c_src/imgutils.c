@@ -36,12 +36,16 @@ static ERL_NIF_TERM resize(ErlNifEnv *env, int argc,
   return enif_make_tuple2(env, enif_make_atom(env, "ok"), out_img_term);
 }
 
+static int upgrade(ErlNifEnv* env, void** priv, void** old_priv, ERL_NIF_TERM load_info)
+{
+  return 0;
+}
 
 static ErlNifFunc nif_funcs[] = {
   {"resize", 6, resize}
 };
 
-ERL_NIF_INIT(Elixir.ImgUtils, nif_funcs, NULL, NULL, NULL, NULL)
+ERL_NIF_INIT(Elixir.ImgUtils, nif_funcs, NULL, NULL, &upgrade, NULL)
 
 /* Local Variables: */
 /* c-basic-offset: 2 */
