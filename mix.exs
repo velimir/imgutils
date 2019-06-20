@@ -11,6 +11,7 @@ defmodule ImgUtils.MixProject do
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
       elixirc_options: [warnings_as_errors: true],
+      test_coverage: [tool: ExCoveralls],
       package: [
         maintainers: ["Grigory Starinkin"],
         files: ["lib", "priv", "mix.exs", "Makefile", "c_src", "README.md", "LICENSE"],
