@@ -40,6 +40,7 @@ defmodule ImgUtils do
     # coveralls-ignore-stop
   end
 
+  @doc false
   def load_nifs do
     :ok = :erlang.load_nif(Application.app_dir(:imgutils, "priv/imgutils"), 0)
   end
