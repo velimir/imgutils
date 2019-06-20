@@ -35,7 +35,9 @@ defmodule ImgUtils do
         _out_width,
         _out_height
       ) do
+    # coveralls-ignore-start
     :erlang.nif_error(:nif_not_loaded)
+    # coveralls-ignore-stop
   end
 
   def load_nifs do
