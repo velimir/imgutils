@@ -1,6 +1,6 @@
 # ImgUtils
 
-**TODO: Add description**
+Collection of image processing utilities
 
 ## Installation
 

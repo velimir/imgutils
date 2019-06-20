@@ -6,8 +6,11 @@ defmodule ImgUtils.MixProject do
       app: :imgutils,
       version: "0.1.0",
       elixir: "~> 1.8",
+      description: description(),
       compilers: [:elixir_make] ++ Mix.compilers,
       start_permanent: Mix.env() == :prod,
+      elixirc_paths: elixirc_paths(Mix.env()),
+      elixirc_options: [warnings_as_errors: true],
       package: [
         maintainers: ["Grigory Starinkin"],
         files: ["lib", "priv", "mix.exs", "Makefile", "c_src", "README.md", "LICENSE"],
@@ -32,4 +35,11 @@ defmodule ImgUtils.MixProject do
       {:ex_doc, "~> 0.20.2", runtime: false}
     ]
   end
+
+  defp description() do
+    "Collection of image processing utilities."
+  end
+
+  defp elixirc_paths(:test), do: ["lib", "test/lib"]
+  defp elixirc_paths(_env), do: ["lib"]
 end
