@@ -7,17 +7,26 @@ defmodule ImgUtils.MixProject do
       version: "0.1.0",
       elixir: "~> 1.8",
       description: description(),
-      compilers: [:elixir_make] ++ Mix.compilers,
+      compilers: [:elixir_make] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
       elixirc_options: [warnings_as_errors: true],
       test_coverage: [tool: ExCoveralls],
       package: [
         maintainers: ["Grigory Starinkin"],
-        files: ["lib", "priv", "mix.exs", "Makefile", "c_src", "README.md", "LICENSE"],
+        files: [
+          "lib",
+          "priv",
+          "mix.exs",
+          "Makefile",
+          "c_src",
+          "README.md",
+          "LICENSE"
+        ],
         licenses: ["MIT"],
         links: %{"GitHub" => "https://github.com/velimir/imgutils"}
       ],
+      source_url: "https://github.com/velimir/imgutils",
       deps: deps()
     ]
   end
