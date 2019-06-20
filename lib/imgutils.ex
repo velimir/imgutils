@@ -10,13 +10,13 @@ defmodule ImgUtils do
 
   ## Examples
 
-  iex> image = <<255, 0, 0, 0, 255, 0, 0, 0, 255>>
-  iex> width = 3; height = 1; channels = 3; out_width = 3; out_height = 5
-  iex> ImgUtils.resize(image, width, height, channels, out_width, out_height)
-  {:ok,
-   <<241, 14, 0, 14, 227, 14, 0, 14, 241, 241, 14, 0, 14, 227, 14, 0, 14, 241,
-   241, 14, 0, 14, 227, 14, 0, 14, 241, 241, 14, 0, 14, 227, 14, 0, 14, 241,
-   241, 14, 0, 14, 227, 14, 0, 14, 241>>}
+      iex(1)> image = <<255, 0, 0, 0, 255, 0, 0, 0, 255>>
+      iex(2)> width = 3; height = 1; channels = 3; out_width = 3; out_height = 5
+      iex(3)> ImgUtils.resize(image, width, height, channels, out_width, out_height)
+      {:ok,
+       <<241, 14, 0, 14, 227, 14, 0, 14, 241, 241, 14, 0, 14, 227, 14, 0, 14, 241,
+       241, 14, 0, 14, 227, 14, 0, 14, 241, 241, 14, 0, 14, 227, 14, 0, 14, 241,
+       241, 14, 0, 14, 227, 14, 0, 14, 241>>}
 
   """
   @spec resize(

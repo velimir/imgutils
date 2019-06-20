@@ -19,8 +19,8 @@ defmodule ImgUtils.Formats.PPM do
 
   ## Examples
 
-  iex> ImgUtils.Formats.PPM.encode(<<255, 0, 0>>, 1, 1)
-  <<80, 54, 10, 49, 32, 49, 10, 50, 53, 53, 10, 255, 0, 0>>
+      iex> ImgUtils.Formats.PPM.encode(<<255, 0, 0>>, 1, 1)
+      <<80, 54, 10, 49, 32, 49, 10, 50, 53, 53, 10, 255, 0, 0>>
 
   """
   @spec encode(binary, pos_integer, pos_integer) :: binary
