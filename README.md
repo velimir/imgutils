@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/velimir/imgutils.svg?branch=master)](https://travis-ci.org/velimir/imgutils) [![Coverage Status](https://coveralls.io/repos/github/velimir/imgutils/badge.svg?branch=master)](https://coveralls.io/github/velimir/imgutils?branch=master)
+
 # ImgUtils
 
 Collection of image processing utilities
